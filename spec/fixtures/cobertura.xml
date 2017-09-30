@@ -1,0 +1,529 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage
+  SYSTEM 'http://cobertura.sourceforge.net/xml/coverage-04.dtd'>
+<coverage branch-rate="0.956140350877" branches-covered="109" branches-valid="114" complexity="0" line-rate="0.983606557377" lines-covered="180" lines-valid="183" timestamp="1504063402" version="2.0.3">
+	<sources>
+		<source>.</source>
+	</sources>
+	<packages>
+		<package branch-rate="0.956043956044" complexity="0" line-rate="0.986486486486" name="src">
+			<classes>
+				<class branch-rate="0.931818181818" complexity="0" filename="src/combineReducers.js" line-rate="1.0" name="src.combineReducers.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="combination" signature="">
+							<lines>
+								<line branch="false" hits="45" number="132"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="combineReducers" signature="">
+							<lines>
+								<line branch="false" hits="19" number="102"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="assertReducerShape" signature="">
+							<lines>
+								<line branch="false" hits="19" number="57"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_2)" signature="">
+							<lines>
+								<line branch="false" hits="66" number="38"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_3)" signature="">
+							<lines>
+								<line branch="false" hits="8" number="43"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_5)" signature="">
+							<lines>
+								<line branch="false" hits="30" number="58"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="getUndefinedStateErrorMessage" signature="">
+							<lines>
+								<line branch="false" hits="3" number="5"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="getUnexpectedStateShapeWarningMessage" signature="">
+							<lines>
+								<line branch="false" hits="42" number="16"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="true" condition-coverage="100% (2/2)" hits="3" number="6"/>
+						<line branch="true" condition-coverage="100% (3/3)" hits="3" number="7"/>
+						<line branch="false" hits="3" number="9"/>
+						<line branch="false" hits="42" number="17"/>
+						<line branch="true" condition-coverage="100% (4/4)" hits="42" number="18"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="42" number="22"/>
+						<line branch="false" hits="1" number="23"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="41" number="29"/>
+						<line branch="false" hits="2" number="30"/>
+						<line branch="false" hits="39" number="38"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="66" number="39"/>
+						<line branch="false" hits="39" number="43"/>
+						<line branch="false" hits="8" number="44"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="39" number="47"/>
+						<line branch="false" hits="6" number="48"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="0" number="49"/>
+						<line branch="false" hits="19" number="58"/>
+						<line branch="false" hits="30" number="59"/>
+						<line branch="false" hits="30" number="60"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="29" number="62"/>
+						<line branch="false" hits="1" number="63"/>
+						<line branch="false" hits="28" number="72"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="28" number="73"/>
+						<line branch="false" hits="1" number="74"/>
+						<line branch="false" hits="19" number="103"/>
+						<line branch="false" hits="19" number="104"/>
+						<line branch="false" hits="19" number="105"/>
+						<line branch="false" hits="36" number="106"/>
+						<line branch="true" condition-coverage="50% (1/2)" hits="36" number="108"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="36" number="109"/>
+						<line branch="false" hits="2" number="110"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="36" number="114"/>
+						<line branch="false" hits="30" number="115"/>
+						<line branch="false" hits="19" number="118"/>
+						<line branch="true" condition-coverage="50% (1/2)" hits="19" number="121"/>
+						<line branch="false" hits="19" number="122"/>
+						<line branch="false" hits="19" number="126"/>
+						<line branch="false" hits="19" number="127"/>
+						<line branch="false" hits="3" number="129"/>
+						<line branch="true" condition-coverage="100% (1/1)" hits="19" number="132"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="45" number="133"/>
+						<line branch="false" hits="3" number="134"/>
+						<line branch="true" condition-coverage="50% (1/2)" hits="42" number="137"/>
+						<line branch="false" hits="42" number="138"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="42" number="139"/>
+						<line branch="false" hits="9" number="140"/>
+						<line branch="false" hits="42" number="144"/>
+						<line branch="false" hits="42" number="145"/>
+						<line branch="false" hits="42" number="146"/>
+						<line branch="false" hits="83" number="147"/>
+						<line branch="false" hits="83" number="148"/>
+						<line branch="false" hits="83" number="149"/>
+						<line branch="false" hits="83" number="150"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="83" number="151"/>
+						<line branch="false" hits="3" number="152"/>
+						<line branch="false" hits="3" number="153"/>
+						<line branch="false" hits="80" number="155"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="80" number="156"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="39" number="158"/>
+					</lines>
+				</class>
+				<class branch-rate="0.0" complexity="0" filename="src/applyMiddleware.js" line-rate="1.0" name="src.applyMiddleware.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_2)" signature="">
+							<lines>
+								<line branch="false" hits="4" number="20"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_1)" signature="">
+							<lines>
+								<line branch="false" hits="4" number="20"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_4)" signature="">
+							<lines>
+								<line branch="false" hits="6" number="29"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="applyMiddleware" signature="">
+							<lines>
+								<line branch="false" hits="4" number="19"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_3)" signature="">
+							<lines>
+								<line branch="false" hits="4" number="27"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="false" hits="4" number="20"/>
+						<line branch="false" hits="4" number="21"/>
+						<line branch="false" hits="4" number="22"/>
+						<line branch="false" hits="4" number="23"/>
+						<line branch="false" hits="4" number="25"/>
+						<line branch="false" hits="4" number="27"/>
+						<line branch="false" hits="6" number="29"/>
+						<line branch="false" hits="4" number="30"/>
+						<line branch="false" hits="4" number="32"/>
+					</lines>
+				</class>
+				<class branch-rate="1.0" complexity="0" filename="src/createStore.js" line-rate="0.983606557377" name="src.createStore.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="observable" signature="">
+							<lines>
+								<line branch="false" hits="6" number="209"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="getState" signature="">
+							<lines>
+								<line branch="false" hits="36" number="74"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="replaceReducer" signature="">
+							<lines>
+								<line branch="false" hits="4" number="194"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="ensureCanMutateNextListeners" signature="">
+							<lines>
+								<line branch="false" hits="40" number="63"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="dispatch" signature="">
+							<lines>
+								<line branch="false" hits="117" number="149"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="subscribe" signature="">
+							<lines>
+								<line branch="false" hits="32" number="101"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="unsubscribe" signature="">
+							<lines>
+								<line branch="false" hits="14" number="111"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="observeState" signature="">
+							<lines>
+								<line branch="false" hits="9" number="225"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="createStore" signature="">
+							<lines>
+								<line branch="false" hits="63" number="39"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="false" hits="5" number="10"/>
+						<line branch="true" condition-coverage="100% (4/4)" hits="63" number="40"/>
+						<line branch="false" hits="3" number="41"/>
+						<line branch="false" hits="3" number="42"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="63" number="45"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="9" number="46"/>
+						<line branch="false" hits="4" number="47"/>
+						<line branch="false" hits="5" number="50"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="54" number="53"/>
+						<line branch="false" hits="3" number="54"/>
+						<line branch="false" hits="51" number="57"/>
+						<line branch="false" hits="51" number="58"/>
+						<line branch="false" hits="51" number="59"/>
+						<line branch="false" hits="51" number="60"/>
+						<line branch="false" hits="51" number="61"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="40" number="64"/>
+						<line branch="false" hits="26" number="65"/>
+						<line branch="false" hits="36" number="75"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="32" number="102"/>
+						<line branch="false" hits="4" number="103"/>
+						<line branch="false" hits="28" number="106"/>
+						<line branch="false" hits="28" number="108"/>
+						<line branch="false" hits="28" number="109"/>
+						<line branch="false" hits="28" number="111"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="14" number="112"/>
+						<line branch="false" hits="2" number="113"/>
+						<line branch="false" hits="12" number="116"/>
+						<line branch="false" hits="12" number="118"/>
+						<line branch="false" hits="12" number="119"/>
+						<line branch="false" hits="12" number="120"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="117" number="150"/>
+						<line branch="false" hits="5" number="151"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="112" number="157"/>
+						<line branch="false" hits="2" number="158"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="110" number="164"/>
+						<line branch="false" hits="1" number="165"/>
+						<line branch="false" hits="109" number="168"/>
+						<line branch="false" hits="109" number="169"/>
+						<line branch="false" hits="109" number="170"/>
+						<line branch="false" hits="109" number="172"/>
+						<line branch="false" hits="107" number="175"/>
+						<line branch="false" hits="107" number="176"/>
+						<line branch="false" hits="37" number="177"/>
+						<line branch="false" hits="37" number="178"/>
+						<line branch="false" hits="107" number="181"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="4" number="195"/>
+						<line branch="false" hits="1" number="196"/>
+						<line branch="false" hits="3" number="199"/>
+						<line branch="false" hits="3" number="200"/>
+						<line branch="false" hits="6" number="210"/>
+						<line branch="false" hits="6" number="211"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="7" number="221"/>
+						<line branch="false" hits="2" number="222"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="9" number="226"/>
+						<line branch="false" hits="7" number="227"/>
+						<line branch="false" hits="5" number="231"/>
+						<line branch="false" hits="5" number="232"/>
+						<line branch="false" hits="5" number="233"/>
+						<line branch="false" hits="0" number="237"/>
+						<line branch="false" hits="51" number="245"/>
+						<line branch="false" hits="51" number="247"/>
+					</lines>
+				</class>
+				<class branch-rate="0.8" complexity="0" filename="src/index.js" line-rate="0.5" name="src.index.js">
+					<methods>
+						<method branch-rate="0.0" line-rate="0.0" name="isCrushed" signature="">
+							<lines>
+								<line branch="false" hits="0" number="12"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="true" condition-coverage="50% (1/2)" hits="5" number="14"/>
+						<line branch="true" condition-coverage="100% (3/3)" hits="0" number="15"/>
+						<line branch="false" hits="0" number="19"/>
+					</lines>
+				</class>
+				<class branch-rate="1.0" complexity="0" filename="src/compose.js" line-rate="1.0" name="src.compose.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_2)" signature="">
+							<lines>
+								<line branch="false" hits="22" number="21"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_1)" signature="">
+							<lines>
+								<line branch="false" hits="3" number="14"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="compose" signature="">
+							<lines>
+								<line branch="false" hits="20" number="12"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_3)" signature="">
+							<lines>
+								<line branch="false" hits="17" number="21"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="true" condition-coverage="100% (2/2)" hits="20" number="13"/>
+						<line branch="false" hits="3" number="14"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="17" number="17"/>
+						<line branch="false" hits="4" number="18"/>
+						<line branch="false" hits="22" number="21"/>
+					</lines>
+				</class>
+				<class branch-rate="1.0" complexity="0" filename="src/bindActionCreators.js" line-rate="1.0" name="src.bindActionCreators.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_1)" signature="">
+							<lines>
+								<line branch="false" hits="2" number="2"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="bindActionCreator" signature="">
+							<lines>
+								<line branch="false" hits="13" number="1"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="bindActionCreators" signature="">
+							<lines>
+								<line branch="false" hits="6" number="26"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="false" hits="13" number="2"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="6" number="27"/>
+						<line branch="false" hits="1" number="28"/>
+						<line branch="true" condition-coverage="100% (4/4)" hits="5" number="31"/>
+						<line branch="false" hits="3" number="32"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="0" number="33"/>
+						<line branch="false" hits="2" number="38"/>
+						<line branch="false" hits="2" number="39"/>
+						<line branch="false" hits="2" number="40"/>
+						<line branch="false" hits="19" number="41"/>
+						<line branch="false" hits="19" number="42"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="19" number="43"/>
+						<line branch="false" hits="12" number="44"/>
+						<line branch="false" hits="2" number="47"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package branch-rate="0.947368421053" complexity="0" line-rate="0.967741935484" name="test.helpers">
+			<classes>
+				<class branch-rate="0.933333333333" complexity="0" filename="test/helpers/reducers.js" line-rate="0.933333333333" name="test.helpers.reducers.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="errorThrowingReducer" signature="">
+							<lines>
+								<line branch="false" hits="6" number="49"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_1)" signature="">
+							<lines>
+								<line branch="false" hits="12" number="5"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="dispatchInTheMiddleOfReducer" signature="">
+							<lines>
+								<line branch="false" hits="5" number="39"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="id" signature="">
+							<lines>
+								<line branch="false" hits="20" number="4"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="todos" signature="">
+							<lines>
+								<line branch="false" hits="83" number="10"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="todosReverse" signature="">
+							<lines>
+								<line branch="false" hits="5" number="25"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="true" condition-coverage="0% (0/1)" hits="0" number="4"/>
+						<line branch="false" hits="20" number="5"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="12" number="6"/>
+						<line branch="true" condition-coverage="100% (1/1)" hits="0" number="10"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="83" number="11"/>
+						<line branch="false" hits="19" number="13"/>
+						<line branch="false" hits="64" number="21"/>
+						<line branch="true" condition-coverage="100% (1/1)" hits="0" number="25"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="5" number="26"/>
+						<line branch="false" hits="1" number="28"/>
+						<line branch="false" hits="4" number="35"/>
+						<line branch="true" condition-coverage="100% (1/1)" hits="0" number="39"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="5" number="40"/>
+						<line branch="false" hits="1" number="42"/>
+						<line branch="false" hits="0" number="43"/>
+						<line branch="false" hits="4" number="45"/>
+						<line branch="true" condition-coverage="100% (1/1)" hits="0" number="49"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="6" number="50"/>
+						<line branch="false" hits="1" number="52"/>
+						<line branch="false" hits="5" number="54"/>
+					</lines>
+				</class>
+				<class branch-rate="1.0" complexity="0" filename="test/helpers/middleware.js" line-rate="1.0" name="test.helpers.middleware.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_2)" signature="">
+							<lines>
+								<line branch="false" hits="10" number="2"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="thunk" signature="">
+							<lines>
+								<line branch="false" hits="3" number="1"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_1)" signature="">
+							<lines>
+								<line branch="false" hits="3" number="2"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="false" hits="3" number="2"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="10" number="3"/>
+					</lines>
+				</class>
+				<class branch-rate="1.0" complexity="0" filename="test/helpers/actionCreators.js" line-rate="1.0" name="test.helpers.actionCreators.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="throwError" signature="">
+							<lines>
+								<line branch="false" hits="1" number="29"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_2)" signature="">
+							<lines>
+								<line branch="false" hits="2" number="8"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_4)" signature="">
+							<lines>
+								<line branch="false" hits="2" number="8"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="addTodoAsync" signature="">
+							<lines>
+								<line branch="false" hits="2" number="7"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_6)" signature="">
+							<lines>
+								<line branch="false" hits="2" number="15"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="dispatchInMiddle" signature="">
+							<lines>
+								<line branch="false" hits="1" number="22"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="(anonymous_3)" signature="">
+							<lines>
+								<line branch="false" hits="2" number="8"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="unknownAction" signature="">
+							<lines>
+								<line branch="false" hits="22" number="35"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="addTodo" signature="">
+							<lines>
+								<line branch="false" hits="22" number="3"/>
+							</lines>
+						</method>
+						<method branch-rate="1.0" line-rate="1.0" name="addTodoIfEmpty" signature="">
+							<lines>
+								<line branch="false" hits="2" number="14"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="false" hits="22" number="4"/>
+						<line branch="false" hits="2" number="8"/>
+						<line branch="false" hits="2" number="9"/>
+						<line branch="false" hits="2" number="10"/>
+						<line branch="false" hits="2" number="15"/>
+						<line branch="true" condition-coverage="100% (2/2)" hits="2" number="16"/>
+						<line branch="false" hits="1" number="17"/>
+						<line branch="false" hits="1" number="23"/>
+						<line branch="false" hits="1" number="30"/>
+						<line branch="false" hits="22" number="36"/>
+					</lines>
+				</class>
+				<class branch-rate="0.0" complexity="0" filename="test/helpers/actionTypes.js" line-rate="1.0" name="test.helpers.actionTypes.js">
+					<methods/>
+					<lines>
+						<line branch="false" hits="3" number="1"/>
+						<line branch="false" hits="3" number="2"/>
+						<line branch="false" hits="3" number="3"/>
+						<line branch="false" hits="3" number="4"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package branch-rate="1.0" complexity="0" line-rate="1.0" name="src.utils">
+			<classes>
+				<class branch-rate="1.0" complexity="0" filename="src/utils/warning.js" line-rate="1.0" name="src.utils.warning.js">
+					<methods>
+						<method branch-rate="1.0" line-rate="1.0" name="warning" signature="">
+							<lines>
+								<line branch="false" hits="14" number="7"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line branch="true" condition-coverage="100% (4/4)" hits="14" number="9"/>
+						<line branch="false" hits="12" number="10"/>
+						<line branch="false" hits="14" number="13"/>
+						<line branch="false" hits="14" number="17"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
+
