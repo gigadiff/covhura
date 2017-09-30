@@ -2,4 +2,4 @@
 
 require_relative "lib/covhura"
 
-puts Covhura.new.translate(ARGV.first)
+puts Covhura.new.translate(File.read(ARGV.first))
