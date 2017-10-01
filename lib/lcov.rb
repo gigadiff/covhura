@@ -48,7 +48,7 @@ class LCov
     file.reduce({}) do |acc, line|
       if line[0...3] == "DA:"
         coverage = line[3..-1].split(",")
-        acc[coverage.first] = coverage.last
+        acc[coverage.first.to_i] = coverage.last.to_i
       end
       acc
     end
@@ -58,7 +58,7 @@ class LCov
     file.reduce({}) do |acc, line|
       if line[0...5] == "BRDA:"
         coverage = line[5..-1].split(",")
-        acc[coverage.first] = true
+        acc[coverage.first.to_i] = true
       end
       acc
     end
