@@ -1,5 +1,4 @@
 require_relative "../lib/covhura"
-require "byebug"
 
 describe Covhura do
   let(:instance) { described_class.new }
