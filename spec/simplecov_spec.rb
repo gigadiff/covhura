@@ -1,4 +1,4 @@
-require_relative "../lib/covhura"
+require_relative "../lib/simplecov"
 
 describe SimpleCov do
   let(:instance) { described_class.new }

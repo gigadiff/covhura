@@ -7,8 +7,8 @@ class Clover
           .xpath("line")
           .map do |line|
             {
-              number: line.attr("num"),
-              hits: line.attr("count"),
+              number: line.attr("num").to_i,
+              hits: line.attr("count").to_i,
               type: line.attr("type") == "cond" ? :condition : :statement
             }
           end
