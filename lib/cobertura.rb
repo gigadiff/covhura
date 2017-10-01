@@ -7,8 +7,8 @@ class Cobertura
           .xpath("lines/line")
           .map do |line|
             {
-              number: line.attr("number"),
-              hits: line.attr("hits"),
+              number: line.attr("number").to_i,
+              hits: line.attr("hits").to_i,
               type: line.attr("branch") == "true" ? :condition : :statement
             }
           end
