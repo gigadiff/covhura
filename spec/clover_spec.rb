@@ -34,17 +34,18 @@ describe Clover do
   let(:doc) { Nokogiri::XML(data) }
 
   context ".translate" do
-    let(:coverage) { [
-      {number: 20, hits: 4, type: :statement},
-      {number: 21, hits: 4, type: :statement},
-      {number: 22, hits: 4, type: :statement},
-      {number: 23, hits: 4, type: :statement},
-      {number: 25, hits: 4, type: :statement},
-      {number: 27, hits: 4, type: :statement},
-      {number: 29, hits: 6, type: :statement},
-      {number: 30, hits: 4, type: :statement},
-      {number: 32, hits: 4, type: :statement}
-    ] }
+    let(:lines) { {
+      20 => {hits: 4, type: :statement},
+      21 => {hits: 4, type: :statement},
+      22 => {hits: 4, type: :statement},
+      23 => {hits: 4, type: :statement},
+      25 => {hits: 4, type: :statement},
+      27 => {hits: 4, type: :statement},
+      29 => {hits: 6, type: :statement},
+      30 => {hits: 4, type: :statement},
+      32 => {hits: 4, type: :statement}
+    } }
+    let(:coverage) { { lines: lines } }
 
     let(:report) { {
       "/home/root/redux/src/applyMiddleware.js" => coverage

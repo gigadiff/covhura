@@ -20,13 +20,14 @@ describe SimpleCov do
   } }
 
   describe ".translate" do
-    let(:coverage) { [
-      {number: 1, hits: 5, type: :unknown},
-      {number: 2, hits: 5, type: :unknown},
-      {number: 4, hits: 1, type: :unknown},
-      {number: 5, hits: 0, type: :unknown},
-      {number: 6, hits: 1, type: :unknown}
-    ] }
+    let(:lines) { {
+      1 => {hits: 5, type: :unknown},
+      2 => {hits: 5, type: :unknown},
+      4 => {hits: 1, type: :unknown},
+      5 => {hits: 0, type: :unknown},
+      6 => {hits: 1, type: :unknown}
+    } }
+    let(:coverage) { { lines: lines } }
 
     let(:report) { {
       file_name => coverage

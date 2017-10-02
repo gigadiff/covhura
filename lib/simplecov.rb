@@ -16,12 +16,13 @@ class SimpleCov
         acc
       end
       .reduce({}) do |acc, (file_name, lines)|
-        acc[file_name] = lines.map do |line_num, hits|
-          {
-            number: line_num,
+        acc[file_name] ||= {}
+        acc[file_name][:lines] = lines.reduce({}) do |bcc, (line_num, hits)|
+          bcc[line_num] = {
             hits: hits,
             type: :unknown
           }
+          bcc
         end
         acc
       end

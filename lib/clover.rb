@@ -3,14 +3,16 @@ class Clover
     doc
       .xpath("//file")
       .reduce({}) do |acc, file|
-        acc[file.attr("path")] = file
+        acc[file.attr("path")] ||= {}
+        acc[file.attr("path")][:lines] = file
           .xpath("line")
-          .map do |line|
-            {
-              number: line.attr("num").to_i,
+          .reduce({}) do |bcc, line|
+            line_num = line.attr("num").to_i
+            bcc[line_num] = {
               hits: line.attr("count").to_i,
               type: line.attr("type") == "cond" ? :condition : :statement
             }
+            bcc
           end
         acc
       end

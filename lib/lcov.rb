@@ -20,7 +20,7 @@ class LCov
       branches = branches(file)
 
       path = file.first[3..-1]
-      acc[path] = merge(lines, branches)
+      acc[path] = {lines: merge(lines, branches)}
 
       acc
     end
@@ -66,9 +66,8 @@ class LCov
 
   # TODO: Technically this misses branches that aren't covered in DA.
   def merge(lines, branches)
-    lines.reduce([]) do |acc, (num, count)|
-      acc << {
-        number: num,
+    lines.reduce({}) do |acc, (num, count)|
+      acc[num] = {
         hits: count,
         type: branches.has_key?(num) ? :condition : :statement
       }
