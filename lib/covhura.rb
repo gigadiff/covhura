@@ -1,10 +1,11 @@
 require "json"
 require "nokogiri"
 
-require_relative "clover"
-require_relative "lcov"
-require_relative "cobertura"
-require_relative "simplecov"
+require_relative "report"
+require_relative "report/clover"
+require_relative "report/lcov"
+require_relative "report/cobertura"
+require_relative "report/simplecov"
 
 class Covhura
   def translate(doc)
@@ -16,15 +17,15 @@ class Covhura
     if xml?(doc)
       doc = Nokogiri::XML(doc)
       if clover?(doc)
-        translator = Clover
+        translator = Report::Clover
       elsif cobertura?(doc)
-        translator = Cobertura
+        translator = Report::Cobertura
       end
     elsif json?(first_line)
       doc = JSON.parse(doc)
-      translator = SimpleCov
+      translator = Report::SimpleCov
     elsif lcov?(first_line)
-      translator = LCov
+      translator = Report::LCov
     end
 
     raise "Coverage Format Not Supported" if !defined?(translator) || translator.nil?
@@ -34,22 +35,15 @@ class Covhura
 
   def merge(old, new)
     new.reduce(old) do |acc, (file_path, file_coverage)|
-      acc[file_path] ||= []
+      acc[file_path] ||= {}
+      acc[file_path][:lines] ||= {}
 
-      old_coverage = old[file_path].reduce({}) do |bcc, line|
-        bcc[line[:number]] = line
-        bcc
-      end
+      old_coverage = acc.dig(file_path, :lines)
 
-      file_coverage.each do |line|
-        old_coverage[line[:number]] = old_coverage.has_key?(line[:number]) ?
-          merge_line(old_coverage[line[:number]], line) :
+      file_coverage[:lines].each do |line_number, line|
+        acc[file_path][:lines][line_number] = old_coverage.has_key?(line_number) ?
+          merge_line(old_coverage[line_number], line) :
           line
-      end
-
-      acc[file_path] = old_coverage.reduce([]) do |bcc, (line_num, line)|
-        bcc << line
-        bcc
       end
 
       acc

@@ -1,4 +1,4 @@
-class SimpleCov
+class Report::SimpleCov
   def translate(json)
     json
       .reduce({}) do |acc, (_test_runner, results)|

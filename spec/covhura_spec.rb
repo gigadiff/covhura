@@ -11,7 +11,7 @@ describe Covhura do
       let(:report_name) { "clover.xml" }
 
       it "tranlates clover" do
-        expect_any_instance_of(Clover).to receive(:translate)
+        expect_any_instance_of(Report::Clover).to receive(:translate)
         instance.translate(file)
       end
     end
@@ -20,7 +20,7 @@ describe Covhura do
       let(:report_name) { "cobertura.xml" }
 
       it "tranlates clover" do
-        expect_any_instance_of(Cobertura).to receive(:translate)
+        expect_any_instance_of(Report::Cobertura).to receive(:translate)
         instance.translate(file)
       end
     end
@@ -29,7 +29,7 @@ describe Covhura do
       let(:report_name) { "lcov.info" }
 
       it "tranlates clover" do
-        expect_any_instance_of(LCov).to receive(:translate)
+        expect_any_instance_of(Report::LCov).to receive(:translate)
         instance.translate(file)
       end
     end
@@ -38,7 +38,7 @@ describe Covhura do
       let(:report_name) { "simplecov.json" }
 
       it "tranlates clover" do
-        expect_any_instance_of(SimpleCov).to receive(:translate)
+        expect_any_instance_of(Report::SimpleCov).to receive(:translate)
         instance.translate(file)
       end
     end
@@ -52,10 +52,12 @@ describe Covhura do
   end
 
   context ".merge" do
-    let(:file) { [
-      {number: 1, hits: 2, type: :statement},
-      {number: 3, hits: 2, type: :statement}
-    ] }
+    let(:file) { {
+      lines: {
+        1 => {hits: 2, type: :statement},
+        3 => {hits: 2, type: :statement}
+      }
+    } }
     let(:file_path) { "foo" }
     let(:new_file_path) { "bar" }
 
@@ -67,7 +69,11 @@ describe Covhura do
       } }
 
       let(:new_report) { {
-        new_file_path => [{number: 1, hits: 1, type: :statement}]
+        new_file_path => {
+          lines: {
+            1 => {hits: 1, type: :statement}
+          }
+        }
       } }
 
       it "creates new file" do
@@ -78,7 +84,11 @@ describe Covhura do
     context "when no previous file" do
       let(:report) { {} }
       let(:new_report) { {
-        new_file_path => [{number: 1, hits: 1, type: :statement}]
+        new_file_path => {
+          lines: {
+            1 => {hits: 1, type: :statement}
+          }
+        }
       } }
 
       it "creates new file" do
@@ -92,11 +102,15 @@ describe Covhura do
       } }
 
       let(:new_report) { {
-        file_path => [{number: 1, hits: 1, type: :statement}]
+        file_path => {
+          lines: {
+            1 => {hits: 1, type: :statement}
+          }
+        }
       } }
 
       it "merges line data" do
-        expect(subject[file_path].first).to include({number: 1, hits: 3, type: :statement})
+        expect(subject[file_path][:lines][1]).to include({hits: 3, type: :statement})
       end
     end
   end

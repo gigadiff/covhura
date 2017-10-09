@@ -1,8 +1,8 @@
 require "nokogiri"
 
-require_relative "../lib/clover"
+require_relative "../lib/report/clover"
 
-describe Clover do
+describe Report::Clover do
   let(:instance) { described_class.new }
 
   let(:data) { <<-EOS

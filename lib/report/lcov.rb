@@ -11,7 +11,7 @@
 # BRF: branches / conditionals
 # BRH: branches / conditions covered
 # end_of_record: -> end of record
-class LCov
+class Report::LCov
   def translate(doc)
     files(doc).reduce({}) do |acc, file|
       file.shift()

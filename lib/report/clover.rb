@@ -1,4 +1,4 @@
-class Clover
+class Report::Clover
   def translate(doc)
     doc
       .xpath("//file")

@@ -1,8 +1,8 @@
 require "nokogiri"
 
-require_relative "../lib/cobertura"
+require_relative "../lib/report/cobertura"
 
-describe Cobertura do
+describe Report::Cobertura do
   let(:instance) { described_class.new }
 
   let(:data) { <<-EOS

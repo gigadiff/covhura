@@ -1,6 +1,6 @@
-require_relative "../lib/lcov"
+require_relative "../lib/report/lcov"
 
-describe LCov do
+describe Report::LCov do
   let(:instance) { described_class.new }
 
   let(:doc) { <<-EOS

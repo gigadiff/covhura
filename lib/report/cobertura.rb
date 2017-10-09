@@ -1,4 +1,4 @@
-class Cobertura
+class Report::Cobertura
   def translate(doc)
     doc
       .xpath("//class")

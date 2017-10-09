@@ -1,6 +1,6 @@
-require_relative "../lib/simplecov"
+require_relative "../lib/report/simplecov"
 
-describe SimpleCov do
+describe Report::SimpleCov do
   let(:instance) { described_class.new }
   let(:file_name) { "/home/root/repo/foo" }
 

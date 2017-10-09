@@ -1,3 +1,5 @@
+require_relative "../lib/report"
+
 require "simplecov"
 
 SimpleCov.start do
