@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
   s.executables << "covhura.rb"
   s.files = ["lib/covhura.rb", "lib/report.rb", "lib/report/clover.rb", "lib/report/cobertura.rb", "lib/report/lcov.rb", "lib/report/simplecov.rb"]
   s.homepage = "https://bitbucket.org/cuzzo/covhura"
-  s.license = "Proprietary"
+  s.license = "Nonstandard"
 end
