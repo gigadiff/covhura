@@ -5,8 +5,11 @@ class Report::SimpleCov
         results["coverage"].each do |file_path, file_coverage|
           acc[file_path] ||= {}
           file_coverage.each_with_index do |line_coverage, i|
-            next if line_coverage.nil?
             line_num = i + 1
+            if line_coverage.nil?
+              acc[file_path][line_num] = nil
+              next
+            end
             old_coverage = acc[file_path][line_num]
             acc[file_path][line_num] = old_coverage.nil? ?
               line_coverage :
