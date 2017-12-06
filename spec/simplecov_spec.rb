@@ -23,6 +23,7 @@ describe Report::SimpleCov do
     let(:lines) { {
       1 => {hits: 5, type: :unknown},
       2 => {hits: 5, type: :unknown},
+      3 => {hits: nil, type: :unknown},
       4 => {hits: 1, type: :unknown},
       5 => {hits: 0, type: :unknown},
       6 => {hits: 1, type: :unknown}

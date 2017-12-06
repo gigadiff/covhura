@@ -53,7 +53,7 @@ class Covhura
   private
 
   def clover?(doc)
-    doc.xpath("/coverage")&.attr("clover") != nil
+    doc.xpath("/coverage")&.attr("generated") != nil
   end
 
   def cobertura?(doc)

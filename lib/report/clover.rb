@@ -3,8 +3,9 @@ class Report::Clover
     doc
       .xpath("//file")
       .reduce({}) do |acc, file|
-        acc[file.attr("path")] ||= {}
-        acc[file.attr("path")][:lines] = file
+        file_path = file.attr("path") || file.attr("name")
+        acc[file_path] ||= {}
+        acc[file_path][:lines] = file
           .xpath("line")
           .reduce({}) do |bcc, line|
             line_num = line.attr("num").to_i
